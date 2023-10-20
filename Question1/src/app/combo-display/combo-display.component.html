@@ -1,0 +1,14 @@
+<p>combo-display works!</p>
+<select [(ngModel)]='comboData'>
+  <option value='radio' selected>Radio</option>
+  <option value='checkbox'>Checkbox</option>
+</select>
+<div *ngIf="comboData === 'radio'">
+  <input type="radio" name="gender" value="Male">Male
+  <input type="radio" name="gender" value="Female">Female
+</div>
+<div *ngIf="comboData === 'checkbox'">
+  <input type="checkbox" name="hobby" value="Coding">Coding
+  <input type="checkbox" name="hobby" value="Reading">Reading
+  <input type="checkbox" name="hobby" value="Cooking">Cooking
+</div>

@@ -1,0 +1,12 @@
+<p>user-input-form works!</p>
+<form (ngSubmit)="onSubmit()">
+  <input type="text" [(ngModel)]="user.name" placeholder="Name" name="name">
+  <input type="email" [(ngModel)]="user.email" placeholder="Email" name="email">
+  <button type="submit">Submit</button>
+</form>
+<div *ngIf="submitted==true">
+  <p>
+    Name : {{ user.name }},
+    Email : {{ user.email }}
+  </p>
+</div>
